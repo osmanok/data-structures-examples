@@ -106,7 +106,6 @@ int main(){
   int length2=rand()%20+1; secondListRoot->data=rand()%1000;
   secondListRoot=randomlinkedlist(secondListRoot, length2);
   printf("\nSecond Linked list before merge\n");
-  print(secondListRoot); //samethings
 
   printf("\nAction Phase\n");
   okuyan(firstListRoot);
@@ -114,4 +113,18 @@ int main(){
   print(globalRoot);
   
   return 0;
+
+
+  int sonuc;
+
+  sonuc=(dizi[0][0]*dizi[1][1])-(dizi[0][1]*dizi[1][0]);
+  sonuc=1/sonuc;
+
+  printf("%d",sonuc); 
+  for(i=0 i<2; i++){
+    for(j=0 j<2; j++){
+      printf("%d",tersmatris[i][j]);  
+    }
+  }
+
 }
